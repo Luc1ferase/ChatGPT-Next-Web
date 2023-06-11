@@ -61,6 +61,9 @@ export function useSwitchTheme() {
       document.body.classList.add("dark");
     } else if (config.theme === "light") {
       document.body.classList.add("light");
+      else if(config.theme === "Neko") {
+        document.body.classList.add("Neko");
+      }
     }
 
     const metaDescriptionDark = document.querySelector(
@@ -68,6 +71,9 @@ export function useSwitchTheme() {
     );
     const metaDescriptionLight = document.querySelector(
       'meta[name="theme-color"][media*="light"]',
+    );
+    const metaDescriptionNeko = document.querySelector(
+      'meta[name="theme-color"][media*="Neko"]',
     );
 
     if (config.theme === "auto") {
