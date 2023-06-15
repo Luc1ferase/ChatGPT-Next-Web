@@ -61,9 +61,6 @@ export function useSwitchTheme() {
       document.body.classList.add("dark");
     } else if (config.theme === "light") {
       document.body.classList.add("light");
-      else if(config.theme === "Neko") {
-        document.body.classList.add("Neko");
-      }
     }
 
     const metaDescriptionDark = document.querySelector(
